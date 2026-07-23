@@ -12,7 +12,9 @@ pipeline {
             }
         }
         stage('deploy'){
-            echo "deployed successfully"
+            steps{
+                echo "deployed successfully"
+            }
         }
     }
 }
