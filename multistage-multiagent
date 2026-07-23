@@ -1,10 +1,9 @@
-pipeline{
-    agent none{
-        stages{
-            stage('Test'){
-                steps{
-                    echo 'Check for the working status'
-                }
+pipeline {
+    agent any
+    stages {
+        stage('Test') {
+            steps {
+                echo 'Check for the working status'
             }
         }
     }
